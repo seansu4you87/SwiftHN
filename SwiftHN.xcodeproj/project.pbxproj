@@ -39,8 +39,6 @@
 		9FEB20C41940DE08007EB9CF /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB20C31940DE08007EB9CF /* NewsViewController.swift */; };
 		9FEB20C81940E0AE007EB9CF /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB20C71940E0AE007EB9CF /* NewsCell.swift */; };
 		9FF131971969641D00533630 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF131961969641D00533630 /* CategoriesViewController.swift */; };
-		C0034F0671414B9E83D56DDF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F34153C464E446BB9A8AE8D8 /* libPods.a */; };
-		D8B90CA3AC654414B5FF2FB8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F34153C464E446BB9A8AE8D8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +161,13 @@
 			remoteGlobalIDString = 9F21AA621940A45700CF4E63;
 			remoteInfo = SwiftHN;
 		};
+		ACCBEFB4197B19A60065AF7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F21AA5B1940A45700CF4E63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F21AA621940A45700CF4E63;
+			remoteInfo = SwiftHN;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -192,7 +197,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		68B886A0A1BB43F48711738A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		9F116DE0197804EC002D297E /* HackerSwifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HackerSwifter.xcodeproj; path = "SwiftHN/libs/submodules/Hacker Swifter/HackerSwifter.xcodeproj"; sourceTree = "<group>"; };
 		9F1AAFED1941F13000E68F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1AAFEE1941F13000E68F41 /* SwiftHNLiveViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftHNLiveViews.h; sourceTree = "<group>"; };
@@ -259,7 +263,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0034F0671414B9E83D56DDF /* libPods.a in Frameworks */,
 				9F116DEB197804FD002D297E /* HackerSwifter.framework in Frameworks */,
 				9F1EE92B194105C30061B4B6 /* SwiftHNShared.framework in Frameworks */,
 			);
@@ -278,7 +281,6 @@
 			files = (
 				9F116DF219780643002D297E /* HackerSwifter.framework in Frameworks */,
 				9F7E9F56196BE6AB008B2F35 /* NotificationCenter.framework in Frameworks */,
-				D8B90CA3AC654414B5FF2FB8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +401,6 @@
 				9F1AAFEB1941F13000E68F41 /* SwiftHNLiveViews */,
 				9F7E9F57196BE6AB008B2F35 /* SwiftHNToday */,
 				9F21AA641940A45700CF4E63 /* Products */,
-				68B886A0A1BB43F48711738A /* Pods.xcconfig */,
 				4BF26A7604EA406E89BD9151 /* Frameworks */,
 				9F21AA7A1940A45700CF4E63 /* SwiftHNTests */,
 				9F1AAFF81941F13000E68F41 /* SwiftHNLiveViewsTests */,
@@ -603,11 +604,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F21AA811940A45700CF4E63 /* Build configuration list for PBXNativeTarget "SwiftHN" */;
 			buildPhases = (
-				C46C4BE7CF724FE1AA9FFF44 /* Check Pods Manifest.lock */,
 				9F21AA5F1940A45700CF4E63 /* Sources */,
 				9F21AA601940A45700CF4E63 /* Frameworks */,
 				9F21AA611940A45700CF4E63 /* Resources */,
-				01008774ABE9424295B492F5 /* Copy Pods Resources */,
 				9F1EE932194105C30061B4B6 /* Embed Frameworks */,
 				9F50705719517E0D005B9914 /* Embed App Extensions */,
 			);
@@ -641,6 +640,7 @@
 				9FC8BA6C195C70310084A0E0 /* PBXTargetDependency */,
 				9F7E9F6A196BEC62008B2F35 /* PBXTargetDependency */,
 				9F7E9F6C196BEC63008B2F35 /* PBXTargetDependency */,
+				ACCBEFB5197B19A60065AF7D /* PBXTargetDependency */,
 			);
 			name = SwiftHNTests;
 			productName = SwiftHNTests;
@@ -651,11 +651,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F7E9F63196BE6AC008B2F35 /* Build configuration list for PBXNativeTarget "SwiftHNToday" */;
 			buildPhases = (
-				9508231935EF42CD8FB670E8 /* Check Pods Manifest.lock */,
 				9F7E9F51196BE6AB008B2F35 /* Sources */,
 				9F7E9F52196BE6AB008B2F35 /* Frameworks */,
 				9F7E9F53196BE6AB008B2F35 /* Resources */,
-				0DAD59A9C35E4C05A5394FB6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -685,7 +683,7 @@
 					};
 					9F21AA621940A45700CF4E63 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = Z6P74P6T99;
+						DevelopmentTeam = ZYX6VTH8SD;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -790,69 +788,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		01008774ABE9424295B492F5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0DAD59A9C35E4C05A5394FB6 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9508231935EF42CD8FB670E8 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C46C4BE7CF724FE1AA9FFF44 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F1EE911194105C30061B4B6 /* Sources */ = {
@@ -987,6 +922,11 @@
 			isa = PBXTargetDependency;
 			target = 9F21AA621940A45700CF4E63 /* SwiftHN */;
 			targetProxy = 9FC8BA6B195C70310084A0E0 /* PBXContainerItemProxy */;
+		};
+		ACCBEFB5197B19A60065AF7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F21AA621940A45700CF4E63 /* SwiftHN */;
+			targetProxy = ACCBEFB4197B19A60065AF7D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1166,19 +1106,18 @@
 		};
 		9F21AA821940A45700CF4E63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68B886A0A1BB43F48711738A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftHN/SwiftHN.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Thomas Ricouard (7MB55D6BJ5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftHN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4A96B1A9-DEE9-49C7-8605-9F0E909298D3";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1187,19 +1126,18 @@
 		};
 		9F21AA831940A45700CF4E63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68B886A0A1BB43F48711738A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftHN/SwiftHN.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Thomas Ricouard (7MB55D6BJ5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftHN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4A96B1A9-DEE9-49C7-8605-9F0E909298D3";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1243,7 +1181,6 @@
 		};
 		9F7E9F64196BE6AC008B2F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68B886A0A1BB43F48711738A /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Thomas Ricouard (7MB55D6BJ5)";
@@ -1264,7 +1201,6 @@
 		};
 		9F7E9F65196BE6AC008B2F35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68B886A0A1BB43F48711738A /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Thomas Ricouard (7MB55D6BJ5)";
